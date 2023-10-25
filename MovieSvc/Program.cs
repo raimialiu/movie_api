@@ -10,11 +10,12 @@ using MovieSvc.Extensions;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+//var app = builder.Build();
 
-app.MapGet("/", () => "Welcome to Movies API");
-
-app.Run();
+Main(builder);
+// app.MapGet("/", () => "Welcome to Movies API");
+//
+// app.Run();
 
 
 void Main(WebApplicationBuilder builder)
